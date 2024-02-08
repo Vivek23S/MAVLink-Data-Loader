@@ -1,11 +1,6 @@
 # MAVLink-Data-Loader
 MAVLink is a serial protocol most commonly used to send data and commands between vehicles and ground stations.
 
-This repository will be helpful to look at the data collected for flight missiions
+This repository is handy for reviewing data from flight missions, especially at the mission's end where '.bin' files hold various structured data. However, these files can be tough to handle. To make it easier, you can use the 'Mission Planner' application (on Windows) to convert '.bin' files to '.mat' files. These '.mat' files can then be effortlessly loaded into MATLAB for data analysis.
 
-Certain types of files are available at the end of the mission. One of them is '.bin' file, this '.bin' file consists of various struct data and it is difficult to load and look at the data.
-
-In order to convert this data one can use 'Mission Planner' application which has an option to convert '.bin' file to '.mat' file. This '.mat' file can be easily loaded to MATLAB and look into data.
-
-This repository is to load this MAVLink data into Python
-
+This repository's main goal is to help you bring MAVLink data into Python smoothly.
