@@ -15,13 +15,13 @@ ARM --> Arming Status Changes
 	    TimeUS 		  - Time since startup startup
 	    ArmState 	  - True if vehicle is now armed
 	    ArmChecks 	- Arming bitmask at time of arming Bitmask values:
-						ARMING_CHECK_ALL			      1
-						ARMING_CHECK_BARO			      2
-						ARMING_CHECK_COMPASS		    4
-						ARMING_CHECK_GPS			      8
-						ARMING_CHECK_INS			      16
-						ARMING_CHECK_PARAMETERS		  32
-						ARMING_CHECK_RC				      64
+						ARMING_CHECK_ALL			      	1
+						ARMING_CHECK_BARO			      	2
+						ARMING_CHECK_COMPASS		    		4
+						ARMING_CHECK_GPS			      	8
+						ARMING_CHECK_INS			      	16
+						ARMING_CHECK_PARAMETERS		  		32
+						ARMING_CHECK_RC				      	64
 						ARMING_CHECK_VOLTAGE		    128
 						ARMING_CHECK_BATTERY		    256
 						ARMING_CHECK_AIRSPEED		    512
