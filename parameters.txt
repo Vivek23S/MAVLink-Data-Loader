@@ -1,20 +1,20 @@
 AHR2 --> Backup AHRS (Altitude & Heading Reference System) Data
-	    TimeUS 	  - Time since system startup
-	    Roll 	    - Estimated Roll 
-	    Pitch 	  - Estimated Pitch
-	    Yaw 	    - Estimated Yaw
-	    Alt 	    - Estimated Alt
-	    Lat 	    - Estimated Lat
-	    Lng 	    - Estimated Lng
-	    Q1 		    - Estimated attitude quaternion component 1
-	    Q2 		    - Estimated attitude quaternion component 2
-	    Q3 		    - Estimated attitude quaternion component 3
-	    Q4 		    - Estimated attitude quaternion component 4
+	    TimeUS	- Time since system startup
+	    Roll 	- Estimated Roll 
+	    Pitch 	- Estimated Pitch
+	    Yaw 	- Estimated Yaw
+	    Alt 	- Estimated Alt
+	    Lat 	- Estimated Lat
+	    Lng 	- Estimated Lng
+	    Q1 		- Estimated attitude quaternion component 1
+	    Q2 		- Estimated attitude quaternion component 2
+	    Q3 		- Estimated attitude quaternion component 3
+	    Q4 		- Estimated attitude quaternion component 4
 
 ARM --> Arming Status Changes
-	    TimeUS 		  - Time since startup startup
-	    ArmState 	  - True if vehicle is now armed
-	    ArmChecks 	- Arming bitmask at time of arming Bitmask values:
+	    TimeUS 		- Time since startup startup
+	    ArmState 	  	- True if vehicle is now armed
+	    ArmChecks 		- Arming bitmask at time of arming Bitmask values:
 						ARMING_CHECK_ALL			      	1
 						ARMING_CHECK_BARO			      	2
 						ARMING_CHECK_COMPASS		    		4
@@ -26,15 +26,15 @@ ARM --> Arming Status Changes
 						ARMING_CHECK_BATTERY		    256
 						ARMING_CHECK_AIRSPEED		    512
 						ARMING_CHECK_LOGGING		    1024
-						ARMING_CHECK_SWITCH			    2048
-						ARMING_CHECK_GPS_CONFIG		  4096
-						ARMING_CHECK_SYSTEM			    8192
-						ARMING_CHECK_MISSION		    16384
-						ARMING_CHECK_RANGEFINDER	  32768
-						ARMING_CHECK_CAMERA			    65536
-						ARMING_CHECK_AUX_AUTH		    131072
-						ARMING_CHECK_VISION			    262144
-						ARMING_CHECK_FFT			      524288
+						ARMING_CHECK_SWITCH		2048
+						ARMING_CHECK_GPS_CONFIG		4096
+						ARMING_CHECK_SYSTEM		8192
+						ARMING_CHECK_MISSION		16384
+						ARMING_CHECK_RANGEFINDER	32768
+						ARMING_CHECK_CAMERA		65536
+						ARMING_CHECK_AUX_AUTH		131072
+						ARMING_CHECK_VISION		262144
+						ARMING_CHECK_FFT		524288
 	    Forced 		- True if arm/disarm was forced
 	    Method		- Method used for arming values:
 						RUDDER						            0
