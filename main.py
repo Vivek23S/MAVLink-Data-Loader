@@ -1,7 +1,7 @@
 import mavlink_mat_file_loader
 
 filename = 'filename.mat'
-params = ['AHR2','ATT','BARO_0','BAT_0','GPS_0','XKF1_0','RATE','RCOU']
+params = ['AHR2','ATT','BARO_0','BAT_0','GPS_0','XKF1_0','RATE','RCOU']    # for options refer to 'Parameters.html'
 
 dt = mavlink_mat_file_loader.data(filename,params)
 labels = mavlink_mat_file_loader.label(filename,params)
