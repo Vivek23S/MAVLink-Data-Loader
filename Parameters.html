@@ -1,0 +1,4377 @@
+<table>
+  <tr>
+    <td>AHR2</td>
+    <td></td>
+    <td>Backup AHRS (Altitude & Heading Reference System) Data</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Roll</td>
+    <td>Estimated Roll</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Pitch</td>
+    <td>Estimated Pitch</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Yaw</td>
+    <td>Estimated Yaw</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Alt</td>
+    <td>Estimated Alt</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Lat</td>
+    <td>Estimated Lat</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Lng</td>
+    <td>Estimated Lng</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Q1</td>
+    <td>Estimated attitude quaternion component 1</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Q2</td>
+    <td>Estimated attitude quaternion component 2</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Q3</td>
+    <td>Estimated attitude quaternion component 3</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Q4</td>
+    <td>Estimated attitude quaternion component 4</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>ARM</td>
+    <td></td>
+    <td>Arming Status Changes</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since startup startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>ArmState</td>
+    <td>True if vehicle is now armed</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>ArmChecks</td>
+    <td>Arming bitmask at time of arming Bitmask values:</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ARMING_CHECK_ALL</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ARMING_CHECK_BARO</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ARMING_CHECK_COMPASS</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ARMING_CHECK_GPS</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ARMING_CHECK_INS</td>
+    <td>16</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ARMING_CHECK_PARAMETERS</td>
+    <td>32</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ARMING_CHECK_RC</td>
+    <td>64</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ARMING_CHECK_VOLTAGE</td>
+    <td>128</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ARMING_CHECK_BATTERY</td>
+    <td>256</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ARMING_CHECK_AIRSPEED</td>
+    <td>512</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ARMING_CHECK_LOGGING</td>
+    <td>1024</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ARMING_CHECK_SWITCH</td>
+    <td>2048</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ARMING_CHECK_GPS_CONFIG</td>
+    <td>4096</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ARMING_CHECK_SYSTEM</td>
+    <td>8192</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ARMING_CHECK_MISSION</td>
+    <td>16384</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ARMING_CHECK_RANGEFINDER</td>
+    <td>32768</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ARMING_CHECK_CAMERA</td>
+    <td>65536</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ARMING_CHECK_AUX_AUTH</td>
+    <td>131072</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ARMING_CHECK_VISION</td>
+    <td>262144</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ARMING_CHECK_FFT</td>
+    <td>524288</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Forced</td>
+    <td>True if arm/disarm was forced</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Method</td>
+    <td>Method used for arming values:</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>RUDDER</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>MAVLINK</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>AUXSWITCH</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>MOTORTEST</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SCRIPTING</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>TERMINATION</td>
+    <td>5		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>CPUFAILSAFE</td>
+    <td>6		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>BATTERYFAILSAFE</td>
+    <td>7		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SOLOPAUSEWHENLANDED</td>
+    <td>8		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>AFS</td>
+    <td>9		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ADSBCOLLISIONACTION</td>
+    <td>10		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>PARACHUTE_RELEASE</td>
+    <td>11		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>CRASH</td>
+    <td>12		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>LANDED</td>
+    <td>13		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>MISSIONEXIT</td>
+    <td>14		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>FENCEBREACH</td>
+    <td>15		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>RADIOFAILSAFE</td>
+    <td>16		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>DISARMDELAY</td>
+    <td>17		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>GCSFAILSAFE</td>
+    <td>18		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>TERRRAINFAILSAFE</td>
+    <td>19		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>FAILSAFE_ACTION_TERMINATE</td>
+    <td>20		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>TERRAINFAILSAFE</td>
+    <td>21		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>MOTORDETECTDONE</td>
+    <td>22		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>BADFLOWOFCONTROL</td>
+    <td>23		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>EKFFAILSAFE</td>
+    <td>24		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>GCS_FAILSAFE_SURFACEFAILED</td>
+    <td>25		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>GCS_FAILSAFE_HOLDFAILED</td>
+    <td>26		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>TAKEOFFTIMEOUT</td>
+    <td>27		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>AUTOLANDED</td>
+    <td>28		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>PILOT_INPUT_FAILSAFE</td>
+    <td>29		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>TOYMODELANDTHROTTLE</td>
+    <td>30		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>TOYMODELANDFORCE</td>
+    <td>31		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>LANDING</td>
+    <td>32		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>DEADRECKON_FAILSAFE</td>
+    <td>33		only disarm uses this…</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>UNKNOWN</td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>ATT</td>
+    <td></td>
+    <td>Canonical Vehicle Attitude</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>DesRoll</td>
+    <td>Vehicle desired roll</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Roll</td>
+    <td>Achieved vehicle roll</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>DesPitch</td>
+    <td>Vehicle desired pitch</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Pitch</td>
+    <td>Achieved vehicle pitch</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>DesYaw</td>
+    <td>Vehicle desired yaw</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Yaw</td>
+    <td>Achieved vehicle yaw</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>ErrRP</td>
+    <td>Lowest estimated gyro drift error</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>ErrYaw</td>
+    <td>Difference between measured yaw and DCM yaw estimate</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AEKF</td>
+    <td>Active EKF type</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>BARO</td>
+    <td></td>
+    <td>Gathered Barometer data [2 data sets collected]</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>I</td>
+    <td>Barometer sensor instance number</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Alt</td>
+    <td>Calculated altitude</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Press</td>
+    <td>Measured atmospheric pressure</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Temp</td>
+    <td>Measured atmospheric temperature</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>CRt</td>
+    <td>Derived climb rate from primary barometer</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>SMS</td>
+    <td>Time last sample was taken</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Offset</td>
+    <td>Raw adjustment of barometer altitude, zeroed on calibration, possibly set by GCS</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>GndTemp</td>
+    <td>Temperature on ground, specified by parameter or measured while on ground</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Health</td>
+    <td>True if barometer is considered healthy</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>BAT</td>
+    <td></td>
+    <td>Gathered battery data [2 data sets collected]</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Instance</td>
+    <td>Battery instance number</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Volt</td>
+    <td>Measured voltage</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>VoltR</td>
+    <td>Estimated resting voltage</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Curr</td>
+    <td>Measured current</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>CurrTot</td>
+    <td>Consumed Ah, current * time</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>EnrgTot</td>
+    <td>Consumed Wh, energy this battery has expended</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Temp</td>
+    <td>Measured temperature</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Res</td>
+    <td>Estimated battery resistance</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>RemPct</td>
+    <td>Remaining percentage</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>CAND</td>
+    <td></td>
+    <td>Info from GetNodeInfo request</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>NodeId</td>
+    <td>Node ID</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>UID1</td>
+    <td>Hardware ID, part 1</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>UID2</td>
+    <td>Hardware ID, part 2</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Name</td>
+    <td>Name string</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Major</td>
+    <td>Major revision id</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Minor</td>
+    <td>Minor revision id</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Version</td>
+    <td>AP_Periph git hash</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>CMD</td>
+    <td></td>
+    <td>Executed mission command information</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>CTot</td>
+    <td>Total number of mission commands</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>CNum</td>
+    <td>This command’s offset in mission</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>CId</td>
+    <td>Command type</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Prm1</td>
+    <td>Parameter 1</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Prm2</td>
+    <td>Parameter 2</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Prm3</td>
+    <td>Parameter 3</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Prm4</td>
+    <td>Parameter 4</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Lat</td>
+    <td>Command latitude</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Lng</td>
+    <td>Command longitude</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Alt</td>
+    <td>Command altitude</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Frame</td>
+    <td>Frame used for position</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>CTRL</td>
+    <td></td>
+    <td>Attitude Control oscillation monitor diagnostics</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>RMSRollP</td>
+    <td>LPF Root Mean Squared Roll Rate controller P gain</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>RMSRollD</td>
+    <td>LPF Root Mean Squared Roll rate controller D gain</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>RMSPitchP</td>
+    <td>LPF Root Mean Squared Pitch Rate controller P gain</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>RMSPitchD</td>
+    <td>LPF Root Mean Squared Pitch Rate controller D gain</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>RMSYaw</td>
+    <td>LPF Root Mean Squared Yaw Rate controller P+D gain</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>CTUN</td>
+    <td></td>
+    <td>Control Tuning information</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>ThI</td>
+    <td>Throttle input</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>ABst</td>
+    <td>Angle boost</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>ThO</td>
+    <td>Throttle output</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>ThH</td>
+    <td>Calculated hover throttle</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>DAlt</td>
+    <td>Desired altitude</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Alt</td>
+    <td>Achieved altitude</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>BAlt</td>
+    <td>Barometric altitude</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>DSAlt</td>
+    <td>Desired rangefinder altitude</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>SAlt</td>
+    <td>Achieved rangefinder altitude</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TAlt</td>
+    <td>Terrain altitude</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>DCRt</td>
+    <td>Desired climb rate</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>CRt</td>
+    <td>Climb rate</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>D32</td>
+    <td></td>
+    <td>Generic 32 bit signed integer storage</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Id</td>
+    <td>Data type identifier</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Value</td>
+    <td>Value</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>DSF</td>
+    <td></td>
+    <td>Onboard logging statistics</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Dp</td>
+    <td>Number of times we rejected a write to the backend</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Blk</td>
+    <td>Current block number</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Bytes</td>
+    <td>Current write offset</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>FMn</td>
+    <td>Minimum free space in write buffer in last time period</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>FMx</td>
+    <td>Maximum free space in write buffer in last time period</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>FAv</td>
+    <td>Average free space in write buffer in last time period</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>DU32</td>
+    <td></td>
+    <td>Generic 32 bit signed integer storage</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Id</td>
+    <td>Data type identifier</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Value</td>
+    <td>Value</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>EV</td>
+    <td></td>
+    <td>Specifically coded event messages</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Id</td>
+    <td>Event identifier values:</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ARMED</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>DISARMED</td>
+    <td>11</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>AUTO_ARMED</td>
+    <td>15</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>LAND_COMPLETE_MAYBE</td>
+    <td>17</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>LAND_COMPLETE</td>
+    <td>18</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>NOT_LANDED</td>
+    <td>28</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>LOST_GPS</td>
+    <td>19</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>FLIP_START</td>
+    <td>21</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>FLIP_END</td>
+    <td>22</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SET_HOME</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SET_SIMPLE_ON</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SET_SIMPLE_OFF</td>
+    <td>27</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SET_SUPERSIMPLE_ON</td>
+    <td>29</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>AUTOTUNE_INITIALISED</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>AUTOTUNE_OFF</td>
+    <td>31</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>AUTOTUNE_RESTART</td>
+    <td>32</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>AUTOTUNE_SUCCESS</td>
+    <td>33</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>AUTOTUNE_FAILED</td>
+    <td>34</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>AUTOTUNE_REACHED_LIMIT</td>
+    <td>35</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>AUTOTUNE_PILOT_TESTING</td>
+    <td>36</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>AUTOTUNE_SAVEDGAINS</td>
+    <td>37</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SAVE_TRIM</td>
+    <td>38</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SAVEWP_ADD_WP</td>
+    <td>39</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>FENCE_ENABLE</td>
+    <td>41</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>FENCE_DISABLE</td>
+    <td>42</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ACRO_TRAINER_OFF</td>
+    <td>43</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ACRO_TRAINER_LEVELING</td>
+    <td>44</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ACRO_TRAINER_LIMITED</td>
+    <td>45</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>GRIPPER_GRAB</td>
+    <td>46</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>GRIPPER_RELEASE</td>
+    <td>47</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>PARACHUTE_DISABLED</td>
+    <td>49</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>PARACHUTE_ENABLED</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>PARACHUTE_RELEASED</td>
+    <td>51</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>LANDING_GEAR_DEPLOYED</td>
+    <td>52</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>LANDING_GEAR_RETRACTED</td>
+    <td>53</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>MOTORS_EMERGENCY_STOPPED</td>
+    <td>54</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>MOTORS_EMERGENCY_STOP_CLEARED</td>
+    <td>55</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>MOTORS_INTERLOCK_DISABLED</td>
+    <td>56</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>MOTORS_INTERLOCK_ENABLED</td>
+    <td>57</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ROTOR_RUNUP_COMPLETE</td>
+    <td>58		Heli only</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ROTOR_SPEED_BELOW_CRITICAL</td>
+    <td>59		Heli only</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>EKF_ALT_RESET</td>
+    <td>60</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>LAND_CANCELLED_BY_PILOT</td>
+    <td>61</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>EKF_YAW_RESET</td>
+    <td>62</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>AVOIDANCE_ADSB_ENABLE</td>
+    <td>63</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>AVOIDANCE_ADSB_DISABLE</td>
+    <td>64</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>AVOIDANCE_PROXIMITY_ENABLE</td>
+    <td>65</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>AVOIDANCE_PROXIMITY_DISABLE</td>
+    <td>66</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>GPS_PRIMARY_CHANGED</td>
+    <td>67</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ZIGZAG_STORE_A</td>
+    <td>71</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ZIGZAG_STORE_B</td>
+    <td>72</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>LAND_REPO_ACTIVE</td>
+    <td>73</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>STANDBY_ENABLE</td>
+    <td>74</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>STANDBY_DISABLE</td>
+    <td>75</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>FENCE_FLOOR_ENABLE</td>
+    <td>80</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>FENCE_FLOOR_DISABLE</td>
+    <td>81</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>EK3_SOURCES_SET_TO_PRIMARY</td>
+    <td>85</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>EK3_SOURCES_SET_TO_SECONDARY</td>
+    <td>86</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>EK3_SOURCES_SET_TO_TERTIARY</td>
+    <td>87</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>AIRSPEED_PRIMARY_CHANGED</td>
+    <td>90</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SURFACED</td>
+    <td>163</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>NOT_SURFACED</td>
+    <td>164</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>BOTTOMED</td>
+    <td>165</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>NOT_BOTTOMED</td>
+    <td>166</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>FILE</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>FMT</td>
+    <td></td>
+    <td>Message defining the format of messages in this file</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Type</td>
+    <td>Unique to this log identifier for message being defined</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Length</td>
+    <td>The number of bytes taken up by this message (including all headers)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Name</td>
+    <td>Name of the message being defined</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Format</td>
+    <td>Character string defining the C storage type of the fields in this message</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Columns</td>
+    <td>The labels of the message being defined</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>FMTU</td>
+    <td></td>
+    <td>Message defining units and multipliers used for fields of other messages</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>FmtType</td>
+    <td>Numeric reference to associated FMT message</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>UnitIds</td>
+    <td>Each character refers to a UNIT message.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>The unit at an offset corresponds to the field at the same offset in FMT.Format</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>MultIds</td>
+    <td>Each character refers to a MULT message.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>The multiplier at an offset corresponds to the field at the same offset in FMT.Format</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>GPA</td>
+    <td></td>
+    <td>GPS accuracy information</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>I</td>
+    <td>GPS instance number</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>VDop</td>
+    <td>Vertical degree of procession</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>HAcc</td>
+    <td>Horizontal position accuracy</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>VAcc</td>
+    <td>Vertical position accuracy</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>SAcc</td>
+    <td>Speed accuracy</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>YAcc</td>
+    <td>Yaw accuracy</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>VV</td>
+    <td>True if vertical velocity is available</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>SMS</td>
+    <td>Time since system startup this sample was taken</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Delta</td>
+    <td>System time delta between the last two reported positions</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Und</td>
+    <td>Undulation</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>GPS</td>
+    <td></td>
+    <td>Information received from GNSS systems attached to the autopilot</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>I</td>
+    <td>GPS instance number</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Status</td>
+    <td>GPS Fix type; 2D fix, 3D fix etc.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>GMS</td>
+    <td>Milliseconds since start of GPS Week</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>GWk</td>
+    <td>Weeks since 5 Jan 1980</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>NSats</td>
+    <td>Number of satellites visible</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>HDop</td>
+    <td>Horizontal precision</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Lat</td>
+    <td>Latitude</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Lng</td>
+    <td>Longitude</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Alt</td>
+    <td>Altitude</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Spd</td>
+    <td>Ground speed</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>GCrs</td>
+    <td>Ground course</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>VZ</td>
+    <td>Vertical speed</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Yaw</td>
+    <td>Vehicle yaw</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>U</td>
+    <td>Boolean value indicating whether this GPS is in use</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>HEAT</td>
+    <td></td>
+    <td>IMU Heater data</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Temp</td>
+    <td>Current IMU temperature</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Targ</td>
+    <td>Target IMU temperature</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>P</td>
+    <td>Proportional portion of response</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>I</td>
+    <td>Integral portion of response</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Out</td>
+    <td>Controller output to heating element</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>IMU</td>
+    <td></td>
+    <td>Inertial Measurement Unit data [3 data sets collected]</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>I</td>
+    <td>IMU sensor instance number</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>GyrX</td>
+    <td>Measured rotation rate about X axis</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>GyrY</td>
+    <td>Measured rotation rate about Y axis</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>GyrZ</td>
+    <td>Measured rotation rate about Z axis</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AccX</td>
+    <td>Acceleration along X axis</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AccY</td>
+    <td>Acceleration along Y axis</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AccZ</td>
+    <td>Acceleration along Z axis</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>EG</td>
+    <td>Gyroscope error count</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>EA</td>
+    <td>Accelerometer error count</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>T</td>
+    <td>IMU temperature</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>GH</td>
+    <td>Gyroscope health</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AH</td>
+    <td>Accelerometer health</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>GHz</td>
+    <td>Gyroscope measurement rate</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AHz</td>
+    <td>Accelerometer measurement rate</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>IOMC</td>
+    <td></td>
+    <td>IOMCU diagnostic information</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>RSErr</td>
+    <td>Status Read error count (zeroed on successful read)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Mem</td>
+    <td>Free memory</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TS</td>
+    <td>IOMCU uptime</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>NPkt</td>
+    <td>Number of packets received by IOMCU</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Nerr</td>
+    <td>Protocol failures on MCU side</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Nerr2</td>
+    <td>Reported number of failures on IOMCU side</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>NDel</td>
+    <td>Number of delayed packets received by MCU</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>MAG</td>
+    <td></td>
+    <td>Information received from compasses [2 data sets collected]</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>I</td>
+    <td>Magnetometer sensor instance number</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>MagX</td>
+    <td>Magnetic field strength in body frame</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>MagY</td>
+    <td>Magnetic field strength in body frame</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>MagZ</td>
+    <td>Magnetic field strength in body frame</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>OfsX</td>
+    <td>Magnetic field offset in body frame</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>OfsY</td>
+    <td>Magnetic field offset in body frame</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>OfsZ</td>
+    <td>Magnetic field offset in body frame</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>MOX</td>
+    <td>Motor interference magnetic field offset in body frame</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>MOY</td>
+    <td>Motor interference magnetic field offset in body frame</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>MOZ</td>
+    <td>Motor interference magnetic field offset in body frame</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Health</td>
+    <td>True if the compass is considered healthy</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>S</td>
+    <td>Time measurement was taken</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>MAV</td>
+    <td></td>
+    <td>GCS MAVLink link statistics</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>chan</td>
+    <td>Mavlink channel number</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>txp</td>
+    <td>Transmitted packet count</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>rxp</td>
+    <td>Received packet count</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>rxdp</td>
+    <td>Perceived number of packets we never received</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>flags</td>
+    <td>Compact representation of some stage of the channel Bitmask values:</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>USING_SIGNING	1</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ACTIVE			2</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>STREAMING		4</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>PRIVATE			8</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>LOCKED			16</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>ss</td>
+    <td>Stream slowdown is the number of ms being added to each message to fit within bandwidth</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>tf</td>
+    <td>Times buffer was full when a message was going to be sent</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>MODE</td>
+    <td></td>
+    <td>Vehicle control mode information</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Mode</td>
+    <td>Vehicle specific mode number</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>ModeNum</td>
+    <td>Alias for Mode</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Rsn</td>
+    <td>Reason for entering this mode; enumeration value Values:</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>UNKNOWN</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>RC_COMMAND</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>GCS_COMMAND</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>RADIO_FAILSAFE</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>BATTERY_FAILSAFE</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>GCS_FAILSAFE</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>EKF_FAILSAFE</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>GPS_GLITCH</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>MISSION_END</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>THROTTLE_LAND_ESCAPE</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>FENCE_BREACHED</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>TERRAIN_FAILSAFE</td>
+    <td>11</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>BRAKE_TIMEOUT</td>
+    <td>12</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>FLIP_COMPLETE</td>
+    <td>13</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>AVOIDANCE</td>
+    <td>14</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>AVOIDANCE_RECOVERY</td>
+    <td>15</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>THROW_COMPLETE</td>
+    <td>16</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>TERMINATE</td>
+    <td>17</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>TOY_MODE</td>
+    <td>18</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>CRASH_FAILSAFE</td>
+    <td>19</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SOARING_FBW_B_WITH_MOTOR_RUNNING</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SOARING_THERMAL_DETECTED</td>
+    <td>21</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SOARING_THERMAL_ESTIMATE_DETERIORATED</td>
+    <td>22</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>VTOL_FAILED_TRANSITION</td>
+    <td>23</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>VTOL_FAILED_TAKEOFF</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>FAILSAFE</td>
+    <td>25		general failsafes, prefer specific failsafes over this as much as possible</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>INITIALISED</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SURFACE_COMPLETE</td>
+    <td>27</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>BAD_DEPTH</td>
+    <td>28</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>LEAK_FAILSAFE</td>
+    <td>29</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SERVOTEST</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>STARTUP</td>
+    <td>31</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SCRIPTING</td>
+    <td>32</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>UNAVAILABLE</td>
+    <td>33</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>AUTOROTATION_START</td>
+    <td>34</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>AUTOROTATION_BAILOUT</td>
+    <td>35</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SOARING_ALT_TOO_HIGH</td>
+    <td>36</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SOARING_ALT_TOO_LOW</td>
+    <td>37</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SOARING_DRIFT_EXCEEDED</td>
+    <td>38</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>RTL_COMPLETE_SWITCHING_TO_VTOL_LAND_RTL</td>
+    <td>39</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>RTL_COMPLETE_SWITCHING_TO_FIXEDWING_AUTOLAND</td>
+    <td>40</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>MISSION_CMD</td>
+    <td>41</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>FRSKY_COMMAND</td>
+    <td>42</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>FENCE_RETURN_PREVIOUS_MODE</td>
+    <td>43</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>QRTL_INSTEAD_OF_RTL</td>
+    <td>44</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>AUTO_RTL_EXIT</td>
+    <td>45</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>LOITER_ALT_REACHED_QLAND</td>
+    <td>46</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>LOITER_ALT_IN_VTOL</td>
+    <td>47</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>RADIO_FAILSAFE_RECOVERY</td>
+    <td>48</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>QLAND_INSTEAD_OF_RTL</td>
+    <td>49</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>DEADRECKON_FAILSAFE</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>MOTB</td>
+    <td></td>
+    <td>Motor mixer information</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>LiftMax</td>
+    <td>Maximum motor compensation gain</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>BatVolt</td>
+    <td>Ratio between detected battery voltage and maximum battery voltage</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>ThLimit</td>
+    <td>Throttle limit set due to battery current limitations</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>ThrAvMx</td>
+    <td>Maximum average throttle that can be used to maintain attitude control, derived from throttle mix params</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>ThrOut</td>
+    <td>Throttle output</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>FailFlags</td>
+    <td>bit 0 motor failed, bit 1 motors balanced, should be 2 in normal flight</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>MSG</td>
+    <td></td>
+    <td>Textual messages</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Message</td>
+    <td>Message text</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>MULT</td>
+    <td></td>
+    <td>Message mapping from single character to numeric multiplier</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Id</td>
+    <td>Character referenced by FMTU</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Mult</td>
+    <td>Numeric multiplier</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>ORGN</td>
+    <td></td>
+    <td>Vehicle navigation origin or other notable position</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Type</td>
+    <td>Position type Values:</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ekf_origin</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ahrs_home</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Lat</td>
+    <td>Position latitude</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Lng</td>
+    <td>Position longitude</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Alt</td>
+    <td>Position altitude</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>PARM</td>
+    <td></td>
+    <td>parameter value</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Name</td>
+    <td>Parameter name</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Value</td>
+    <td>Parameter value</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Default</td>
+    <td>Default parameter value for this board and config</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>PM</td>
+    <td></td>
+    <td>autopilot system performance and general data dumping ground</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>LR</td>
+    <td>Main loop rate</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>NLon</td>
+    <td>Number of long loops detected</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>NL</td>
+    <td>Number of measurement loops for this message</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>MaxT</td>
+    <td>Maximum loop time</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Mem</td>
+    <td>Free memory available</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Load</td>
+    <td>System processor load</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IntE</td>
+    <td>Internal error mask; which internal errors have been detected Bitmask values:</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>logger_mapfailure</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>logger_missing_logstructure</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>logger_logwrite_missingfmt</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>logger_too_many_deletions</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>logger_bad_getfilename</td>
+    <td>16</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>panic</td>
+    <td>32</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>logger_flushing_without_sem</td>
+    <td>64</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>logger_bad_current_block</td>
+    <td>128</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>logger_blockcount_mismatch</td>
+    <td>256</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>logger_dequeue_failure</td>
+    <td>512</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>constraining_nan</td>
+    <td>1024</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>watchdog_reset</td>
+    <td>2048</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>iomcu_reset</td>
+    <td>4096</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>iomcu_fail</td>
+    <td>8192</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>spi_fail</td>
+    <td>16384</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>main_loop_stuck</td>
+    <td>32768</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>gcs_bad_missionprotocol_link</td>
+    <td>65536</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>bitmask_range</td>
+    <td>131072</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>gcs_offset</td>
+    <td>262144</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>i2c_isr</td>
+    <td>524288</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>flow_of_control</td>
+    <td>1048576</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>switch_full_sector_recursion</td>
+    <td>2097152</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>bad_rotation</td>
+    <td>4194304</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>stack_overflow</td>
+    <td>8388608</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>imu_reset</td>
+    <td>16777216</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>gpio_isr</td>
+    <td>33554432</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>mem_guard</td>
+    <td>67108864</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>dma_fail</td>
+    <td>134217728</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>params_restored</td>
+    <td>268435456</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>invalid_arg_or_result</td>
+    <td>536870912</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>__LAST__</td>
+    <td>1073741824</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>ErrL</td>
+    <td>Internal error line number; last line number on which a internal error was detected</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>ErrC</td>
+    <td>Internal error count; how many internal errors have been detected</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>SPIC</td>
+    <td>Number of SPI transactions processed</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>I2CC</td>
+    <td>Number of i2c transactions processed</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>I2CI</td>
+    <td>Number of i2c interrupts serviced</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Ex</td>
+    <td>Number of microseconds being added to each loop to address scheduler overruns</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>POS</td>
+    <td></td>
+    <td>Canonical vehicle position</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Lat</td>
+    <td>Canonical vehicle latitude</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Lng</td>
+    <td>Canonical vehicle longitude</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Alt</td>
+    <td>Canonical vehicle altitude</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>RelHomeAlt</td>
+    <td>Canonical vehicle altitude relative to home</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>RelOriginAlt</td>
+    <td>Canonical vehicle altitude relative to navigation origin</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>POWR</td>
+    <td></td>
+    <td>System power information</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Vcc</td>
+    <td>Flight board voltage</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>VServo</td>
+    <td>Servo rail voltage</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Flags</td>
+    <td>System power flags</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AccFlags</td>
+    <td>Accumulated System power flags; all flags which have ever been set</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Safety</td>
+    <td>Hardware Safety Switch status</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>PSCD</td>
+    <td></td>
+    <td>Position Control Down</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TPD</td>
+    <td>Target position relative to EKF origin</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>PD</td>
+    <td>Position relative to EKF origin</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>DVD</td>
+    <td>Desired velocity Down</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TVD</td>
+    <td>Target velocity Down</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>VD</td>
+    <td>Velocity Down</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>DAD</td>
+    <td>Desired acceleration Down</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TAD</td>
+    <td>Target acceleration Down</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AD</td>
+    <td>Acceleration Down</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>PSCE</td>
+    <td></td>
+    <td>Position Control East</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TPE</td>
+    <td>Target position relative to EKF origin</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>PE</td>
+    <td>Position relative to EKF origin</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>DVE</td>
+    <td>Desired velocity East</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TVE</td>
+    <td>Target velocity East</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>VE</td>
+    <td>Velocity East</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>DAE</td>
+    <td>Desired acceleration East</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TAE</td>
+    <td>Target acceleration East</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AE</td>
+    <td>Acceleration East</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>PSCN</td>
+    <td></td>
+    <td>Position Control North</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TPN</td>
+    <td>Target position relative to EKF origin</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>PN</td>
+    <td>Position relative to EKF origin</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>DVN</td>
+    <td>Desired velocity North</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TVN</td>
+    <td>Target velocity North</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>VN</td>
+    <td>Velocity North</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>DAN</td>
+    <td>Desired acceleration North</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TAN</td>
+    <td>Target acceleration North</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AN</td>
+    <td>Acceleration North</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>RATE</td>
+    <td></td>
+    <td>Desired and achieved vehicle attitude rates. Not logged in Fixed Wing Plane modes.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>RDes</td>
+    <td>Vehicle desired roll rate</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>R</td>
+    <td>Achieved vehicle roll rate</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>ROut</td>
+    <td>Normalized output for Roll</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>PDes</td>
+    <td>Vehicle desired pitch rate</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>P</td>
+    <td>Vehicle pitch rate</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>POut</td>
+    <td>Normalized output for Pitch</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>YDes</td>
+    <td>Vehicle desired yaw rate</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Y</td>
+    <td>Achieved vehicle yaw rate</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>YOut</td>
+    <td>Normalized output for Yaw</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>ADes</td>
+    <td>Desired vehicle vertical acceleration</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>A</td>
+    <td>Achieved vehicle vertical acceleration</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AOut</td>
+    <td>Percentage of vertical thrust output current being used</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AOutSlew</td>
+    <td>Vertical thrust output slew rate</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>RCIN</td>
+    <td></td>
+    <td>RC input channels to vehicle</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C1</td>
+    <td>Channel 1 input</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C2</td>
+    <td>Channel 2 input</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C3</td>
+    <td>Channel 3 input</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C4</td>
+    <td>Channel 4 input</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C5</td>
+    <td>Channel 5 input</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C6</td>
+    <td>Channel 6 input</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C7</td>
+    <td>Channel 7 input</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C8</td>
+    <td>Channel 8 input</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C9</td>
+    <td>Channel 9 input</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C10</td>
+    <td>Channel 10 input</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C11</td>
+    <td>Channel 11 input</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C12</td>
+    <td>Channel 12 input</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C13</td>
+    <td>Channel 13 input</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C14</td>
+    <td>Channel 14 input</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>RCO2</td>
+    <td></td>
+    <td>Servo channel output values 15 to 18</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C15</td>
+    <td>Channel 15 output</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C16</td>
+    <td>Channel 16 output</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C17</td>
+    <td>Channel 17 output</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C18</td>
+    <td>Channel 18 output</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>RCOU</td>
+    <td></td>
+    <td>Servo channel output values 1 to 14</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C1</td>
+    <td>Channel 1 output</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C2</td>
+    <td>Channel 2 output</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C3</td>
+    <td>Channel 3 output</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C4</td>
+    <td>Channel 4 output</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C5</td>
+    <td>Channel 5 output</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C6</td>
+    <td>Channel 6 output</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C7</td>
+    <td>Channel 7 output</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C8</td>
+    <td>Channel 8 output</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C9</td>
+    <td>Channel 9 output</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C10</td>
+    <td>Channel 10 output</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C11</td>
+    <td>Channel 11 output</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C12</td>
+    <td>Channel 12 output</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C13</td>
+    <td>Channel 13 output</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C14</td>
+    <td>Channel 14 output</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>RFND</td>
+    <td></td>
+    <td>Rangefinder sensor information</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Instance</td>
+    <td>rangefinder instance number this data is from</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Dist</td>
+    <td>Reported distance from sensor</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Stat</td>
+    <td>Sensor state Values:</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>NotConnected	0</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>NoData			1</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>OutOfRangeLow	2</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>OutOfRangeHigh	3</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>Good			4</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Orient</td>
+    <td>Sensor orientation</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>SRTL</td>
+    <td></td>
+    <td>SmartRTL statistics</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Active</td>
+    <td>True if SmartRTL could be used right now</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>NumPts</td>
+    <td>Number of points currently in use</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>MaxPts</td>
+    <td>Maximum number of points that could be used</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Action</td>
+    <td>Most recent internal action taken by SRTL library Values:</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SRTL_POINT_ADD</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SRTL_POINT_PRUNE</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SRTL_POINT_SIMPLIFY</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SRTL_ADD_FAILED_NO_SEMAPHORE</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SRTL_ADD_FAILED_PATH_FULL</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SRTL_POP_FAILED_NO_SEMAPHORE</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SRTL_PEEK_FAILED_NO_SEMAPHORE</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SRTL_DEACTIVATED_INIT_FAILED</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SRTL_DEACTIVATED_BAD_POSITION</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SRTL_DEACTIVATED_BAD_POSITION_TIMEOUT</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SRTL_DEACTIVATED_PATH_FULL_TIMEOUT</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>SRTL_DEACTIVATED_PROGRAM_ERROR</td>
+    <td>11</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>N</td>
+    <td>Point associated with most recent action (North component)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>E</td>
+    <td>Point associated with most recent action (East component)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>D</td>
+    <td>Point associated with most recent action (Down component)</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>STAK</td>
+    <td></td>
+    <td>Stack information</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Id</td>
+    <td>Thread ID</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Pri</td>
+    <td>Thread priority</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Total</td>
+    <td>Total stack</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Free</td>
+    <td>Free stack</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Name</td>
+    <td>Thread name</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>TERR</td>
+    <td></td>
+    <td>Terrain database information</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Status</td>
+    <td>Terrain database status Values:</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>TerrainStatusDisabled</td>
+    <td>0		not enabled</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>TerrainStatusUnhealthy</td>
+    <td>1		no terrain data for current location</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>TerrainStatusOK</td>
+    <td>2		terrain data available</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Lat</td>
+    <td>Current vehicle latitude</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Lng</td>
+    <td>Current vehicle longitude</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Spacing</td>
+    <td>Terrain Tile spacing</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TerrH</td>
+    <td>Current Terrain height</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>CHeight</td>
+    <td>Vehicle height above terrain</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Pending</td>
+    <td>Number of tile requests outstanding</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Loaded</td>
+    <td>Number of tiles in memory</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>ROfs</td>
+    <td>terrain reference offset for arming altitude</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>UNIT</td>
+    <td></td>
+    <td>Message mapping from single character to SI unit</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Id</td>
+    <td>Character referenced by FMTU</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Label</td>
+    <td>Unit SI where available</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>VIBE</td>
+    <td></td>
+    <td>Processed (acceleration) vibration information</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IMU</td>
+    <td>Vibration instance number</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>VibeX</td>
+    <td>Primary accelerometer filtered vibration, x axis</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>VibeY</td>
+    <td>Primary accelerometer filtered vibration, y axis</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>VibeZ</td>
+    <td>Primary accelerometer filtered vibration, z axis</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Clip</td>
+    <td>Number of clipping events on 1st accelerometer</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>XKF1</td>
+    <td></td>
+    <td>EKF3 estimator outputs</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C</td>
+    <td>EKF3 core this data is for</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Roll</td>
+    <td>Estimated roll</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Pitch</td>
+    <td>Estimated pitch</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Yaw</td>
+    <td>Estimated yaw</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>VN</td>
+    <td>Estimated velocity (North component)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>VE</td>
+    <td>Estimated velocity (East component)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>VD</td>
+    <td>Estimated velocity (Down component)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>dPD</td>
+    <td>Filtered derivative of vertical position (down)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>PN</td>
+    <td>Estimated distance from origin (North component)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>PE</td>
+    <td>Estimated distance from origin (East component)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>PD</td>
+    <td>Estimated distance from origin (Down component)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>GX</td>
+    <td>Estimated gyro bias, X axis</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>GY</td>
+    <td>Estimated gyro bias, Y axis</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>GZ</td>
+    <td>Estimated gyro bias, Z axis</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>OH</td>
+    <td>Height of origin above WGS 84</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>XKF2</td>
+    <td></td>
+    <td>EKF3 estimator secondary outputs</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C</td>
+    <td>EKF3 core this data is for</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AX</td>
+    <td>Estimated accelerometer X bias</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AY</td>
+    <td>Estimated accelerometer Y bias</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AZ</td>
+    <td>Estimated accelerometer Z bias</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>VWN</td>
+    <td>Estimated wind velocity (North component)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>VWE</td>
+    <td>Estimated wind velocity (East component)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>MN</td>
+    <td>Magnetic field strength (North component)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>ME</td>
+    <td>Magnetic field strength (East component)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>MD</td>
+    <td>Magnetic field strength (Down component)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>MX</td>
+    <td>Magnetic field strength (body X axis)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>MY</td>
+    <td>Magnetic field strength (body Y axis)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>MZ</td>
+    <td>Magnetic field strength (body Z axis)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IDX</td>
+    <td>Innovation in vehicle drag acceleration (X axis component)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IDY</td>
+    <td>Innovation in vehicle drag acceleration (Y axis component)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IS</td>
+    <td>Innovation in vehicle sideslip</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>XKF3</td>
+    <td></td>
+    <td>EKF3 innovations</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C</td>
+    <td>EKF3 core this data is for</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IVN</td>
+    <td>Innovation in velocity (North component)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IVE</td>
+    <td>Innovation in velocity (East component)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IVD</td>
+    <td>Innovation in velocity (Down component)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IPN</td>
+    <td>Innovation in position (North component)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IPE</td>
+    <td>Innovation in position (East component)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IPD</td>
+    <td>Innovation in position (Down component)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IMX</td>
+    <td>Innovation in magnetic field strength (X axis component)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IMY</td>
+    <td>Innovation in magnetic field strength (Y axis component)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IMZ</td>
+    <td>Innovation in magnetic field strength (Z axis component)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IYAW</td>
+    <td>Innovation in vehicle yaw</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IVT</td>
+    <td>Innovation in true airspeed</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>RErr</td>
+    <td>Accumulated relative error of this core with respect to active primary core</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>ErSc</td>
+    <td>A consolidated error score where higher numbers are less healthy</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>XKF4</td>
+    <td></td>
+    <td>EKF3 variances. SV, SP, SH and SM are probably best described as ‘Squared Innovation</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>Test Ratios’ where values <1 tells us the measurement was accepted and >1 tells us it</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>was rejected.They represent the square of the (innovation / maximum allowed innovation)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>where the innovation is the difference between predicted and measured value and the</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>maximum allowed innovation is determined from the uncertainty of the measurement,</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>uncertainty of the prediction and scaled using the number of standard deviations set by</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>the innovation gate parameter for that measurement,</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>eg EK3_MAG_I_GATE, EK3_HGT_I_GATE, etc</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C</td>
+    <td>EKF3 core this data is for</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>SV</td>
+    <td>Square root of the velocity variance</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>SP</td>
+    <td>Square root of the position variance</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>SH</td>
+    <td>Square root of the height variance</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>SM</td>
+    <td>Magnetic field variance</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>SVT</td>
+    <td>Square root of the total airspeed variance</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>errRP</td>
+    <td>Filtered error in roll/pitch estimate</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>OFN</td>
+    <td>Most recent position reset (North component)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>OFE</td>
+    <td>Most recent position reset (East component)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>FS</td>
+    <td>Filter fault status</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TS</td>
+    <td>Filter timeout status bitmask</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>(0:position measurement, 1:velocity measurement, 2:height measurement,</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>3:magnetometer measurement, 4:airspeed measurement, 5:drag measurement)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>SS</td>
+    <td>Filter solution status</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>GPS</td>
+    <td>Filter GPS status</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>PI</td>
+    <td>Primary core index</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>XKF5</td>
+    <td></td>
+    <td>EKF3 Sensor innovations (primary core) and general dumping ground</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C</td>
+    <td>EKF3 core this data is for</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>NI</td>
+    <td>Normalised flow variance</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>FIX</td>
+    <td>Optical flow LOS rate vector innovations from the main nav filter (X axis)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>FIY</td>
+    <td>Optical flow LOS rate vector innovations from the main nav filter (Y axis)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AFI</td>
+    <td>Optical flow LOS rate innovation from terrain offset estimator</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>HAGL</td>
+    <td>Height above ground level</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>offset</td>
+    <td>Estimated vertical position of the terrain relative to the nav filter zero datum</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>RI</td>
+    <td>Range finder innovations</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>rng</td>
+    <td>Measured range</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Herr</td>
+    <td>Filter ground offset state error</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>eAng</td>
+    <td>Magnitude of angular error</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>eVel</td>
+    <td>Magnitude of velocity error</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>ePos</td>
+    <td>Magnitude of position error</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>XKFS</td>
+    <td></td>
+    <td>EKF3 sensor selection</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C</td>
+    <td>EKF3 core this data is for</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>MI</td>
+    <td>Compass selection index</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>BI</td>
+    <td>Barometer selection index</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>GI</td>
+    <td>GPS selection index</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AI</td>
+    <td>Airspeed selection index</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>SS</td>
+    <td>Source Set (primary=0/secondary=1/tertiary=2)</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>XKQ</td>
+    <td></td>
+    <td>EKF3 quaternion defining the rotation from NED to XYZ (autopilot) axes</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C</td>
+    <td>EKF3 core this data is for</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Q1</td>
+    <td>Quaternion a term</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Q2</td>
+    <td>Quaternion b term</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Q3</td>
+    <td>Quaternion c term</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Q4</td>
+    <td>Quaternion d term</td>
+  </tr>
+  <tr>
+    <td>XKT</td>
+    <td></td>
+    <td>EKF3 timing information</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C</td>
+    <td>EKF core this message instance applies to</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Cnt</td>
+    <td>Count of samples used to create this message</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IMUMin</td>
+    <td>Smallest IMU sample interval</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IMUMax</td>
+    <td>Largest IMU sample interval</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>EKFMin</td>
+    <td>Low passed achieved average time step rate for the EKF (minimum)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>EKFMax</td>
+    <td>Low passed achieved average time step rate for the EKF (maximum)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AngMin</td>
+    <td>Accumulated measurement time interval for the delta angle (minimum)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AngMax</td>
+    <td>Accumulated measurement time interval for the delta angle (maximum)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>VMin</td>
+    <td>Accumulated measurement time interval for the delta velocity (minimum)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>VMax</td>
+    <td>Accumulated measurement time interval for the delta velocity (maximum)</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>XKV1</td>
+    <td></td>
+    <td>EKF3 State variances (primary core)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C</td>
+    <td>EKF3 core this data is for</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>V00</td>
+    <td>Variance for state 0</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>V01</td>
+    <td>Variance for state 1</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>V02</td>
+    <td>Variance for state 2</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>V03</td>
+    <td>Variance for state 3</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>V04</td>
+    <td>Variance for state 4</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>V05</td>
+    <td>Variance for state 5</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>V06</td>
+    <td>Variance for state 6</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>V07</td>
+    <td>Variance for state 7</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>V08</td>
+    <td>Variance for state 8</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>V09</td>
+    <td>Variance for state 9</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>V10</td>
+    <td>Variance for state 10</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>V11</td>
+    <td>Variance for state 11</td>
+  </tr>
+  <tr>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td>XKV2</td>
+    <td></td>
+    <td>More EKF3 State Variances (primary core)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C</td>
+    <td>EKF3 core this data is for</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>V12</td>
+    <td>Variance for state 12</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>V13</td>
+    <td>Variance for state 13</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>V14</td>
+    <td>Variance for state 14</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>V15</td>
+    <td>Variance for state 15</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>V16</td>
+    <td>Variance for state 16</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>V17</td>
+    <td>Variance for state 17</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>V18</td>
+    <td>Variance for state 18</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>V19</td>
+    <td>Variance for state 19</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>V20</td>
+    <td>Variance for state 20</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>V21</td>
+    <td>Variance for state 21</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>V22</td>
+    <td>Variance for state 22</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>V23</td>
+    <td>Variance for state 23</td>
+  </tr>
+  <tr>
+    <td>XKY0</td>
+    <td></td>
+    <td>EKF Yaw Estimator States</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C</td>
+    <td>EKF core this data is for</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>YC</td>
+    <td>GSF yaw estimate (deg)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>YCS</td>
+    <td>GSF yaw estimate 1 Sigma uncertainty (deg)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Y0</td>
+    <td>Yaw estimate from individual EKF filter 0 (deg)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Y1</td>
+    <td>Yaw estimate from individual EKF filter 1 (deg)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Y2</td>
+    <td>Yaw estimate from individual EKF filter 2 (deg)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Y3</td>
+    <td>Yaw estimate from individual EKF filter 3 (deg)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Y4</td>
+    <td>Yaw estimate from individual EKF filter 4 (deg)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>W0</td>
+    <td>Weighting applied to yaw estimate from individual EKF filter 0</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>W1</td>
+    <td>Weighting applied to yaw estimate from individual EKF filter 1</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>W2</td>
+    <td>Weighting applied to yaw estimate from individual EKF filter 2</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>W3</td>
+    <td>Weighting applied to yaw estimate from individual EKF filter 3</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>W4</td>
+    <td>Weighting applied to yaw estimate from individual EKF filter 4</td>
+  </tr>
+  <tr>
+    <td>XKY1</td>
+    <td></td>
+    <td>EKF Yaw Estimator Innovations</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>TimeUS</td>
+    <td>Time since system startup</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>C</td>
+    <td>EKF core this data is for</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IVN0</td>
+    <td>North velocity innovation from individual EKF filter 0 (m/s)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IVN1</td>
+    <td>North velocity innovation from individual EKF filter 1 (m/s)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IVN2</td>
+    <td>North velocity innovation from individual EKF filter 2 (m/s)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IVN3</td>
+    <td>North velocity innovation from individual EKF filter 3 (m/s)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IVN4</td>
+    <td>North velocity innovation from individual EKF filter 4 (m/s)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IVE0</td>
+    <td>East velocity innovation from individual EKF filter 0 (m/s)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IVE1</td>
+    <td>East velocity innovation from individual EKF filter 1 (m/s)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IVE2</td>
+    <td>East velocity innovation from individual EKF filter 2 (m/s)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IVE3</td>
+    <td>East velocity innovation from individual EKF filter 3 (m/s)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>IVE4</td>
+    <td>East velocity innovation from individual EKF filter 4 (m/s)</td>
+  </tr>
+</table>
