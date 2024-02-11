@@ -42,33 +42,10 @@ def timedata(datafile,params):
     for i in range(len(params)):
         time[str(params[i])] = []
         for j in range(len(data[str(params[i])])):
-            # time[str(params[i])].append(str((missionstarttime + datetime.timedelta(microseconds=data[str(params[i])][j,1])).time()))
-            time[str(params[i])].append((missionstarttime + datetime.timedelta(microseconds=data[str(params[i])][j,1])))
+            time[str(params[i])].append((flightdatetime + datetime.timedelta(microseconds=data[str(params[i])][j,1])))
         time[str(params[i])] = np.array(time[str(params[i])])
 
     return time
-
-def label(datafile,params):
-    data = loadmat(datafile)
-
-    label = []
-    for i in range(len(params)):
-        label.append(params[i].split("_")[0] + '_label')
-
-    dt = {}
-    for i in range(len(params)):
-        dt[str(params[i])] = {}
-        for j in range(len(data[str(label[i])])):
-            dt[str(params[i])][str(data[str(label[i])][j]).split("'")[1]] = data[str(params[i])][0:len(data[str(params[i])]),j]
-
-    lab = {}
-    for i in range(len(params)):
-        lab[str(params[i])] = list(dt[str(params[i])].keys())
-
-    lab = pd.DataFrame({key: pd.Series(value) for key, value in lab.items()})
-    lab = pd.DataFrame.map(lab,lambda x: '' if pd.isna(x) else x)
-
-    return lab
 
 def label(datafile,params):
     data = loadmat(datafile)
